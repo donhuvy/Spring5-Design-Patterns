@@ -6,14 +6,15 @@ import org.aspectj.lang.annotation.Before;
 
 @Aspect
 public class LoggingAspect {
-	
-	@Before("execution(* *.transferAmmount(..))")
-	public void logBeforeTransfer(){
-		System.out.println("####LoggingAspect.logBeforeTransfer() method called before transfer amount####");
-	}
-	
-	@After("execution(* *.transferAmmount(..))")
-	public void logAfterTransfer(){
-		System.out.println("####LoggingAspect.logAfterTransfer() method called after transfer amount####");
-	}
+
+    @Before("execution(* *.transferAmmount(..))")
+    public void logBeforeTransfer() {
+        System.out.println("####LoggingAspect.logBeforeTransfer() method called before transfer amount####");
+    }
+
+    @After("execution(* *.transferAmmount(..))")
+    public void logAfterTransfer() {
+        System.out.println("####LoggingAspect.logAfterTransfer() method called after transfer amount####");
+    }
+
 }

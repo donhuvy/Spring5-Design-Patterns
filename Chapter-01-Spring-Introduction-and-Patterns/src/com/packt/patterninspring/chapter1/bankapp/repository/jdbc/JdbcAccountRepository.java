@@ -6,9 +6,9 @@ import com.packt.patterninspring.chapter1.bankapp.repository.AccountRepository;
 
 public class JdbcAccountRepository implements AccountRepository {
 
-	@Override
-	public Account findByAccountId(Long accountId) {
-		return new Account(accountId, "Arnav Rajput", new Amount(3000.0));
-	}
+    @Override
+    public Account findByAccountId(Long accountId) {
+        return new Account(accountId, "Arnav Rajput", new Amount(3000.0));
+    }
 
 }
